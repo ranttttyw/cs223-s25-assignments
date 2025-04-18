@@ -95,9 +95,9 @@ int main()
   pthread_join(thread2, NULL);
 
   printf("Ending balance A: %.2f\n", A.balance);
-  fflush(stdout); // 🆕 ADDED
+  fflush(stdout);
   printf("Ending balance B: %.2f\n", B.balance);
-  fflush(stdout); // 🆕 ADDED
+  fflush(stdout);
 
   pthread_mutex_destroy(&A.lock);
   pthread_mutex_destroy(&B.lock);
